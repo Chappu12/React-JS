@@ -6,7 +6,7 @@ const page = () => {
 
     return (
         <>
-
+            <h1>HI welcome to my page   </h1>
         </>
     )
 }
