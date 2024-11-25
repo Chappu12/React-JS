@@ -7,7 +7,7 @@ const page = () => {
     return (
         <>
             <Header/>
-
+            {user}
         </>
     )
 }
