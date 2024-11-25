@@ -3,10 +3,11 @@ import React, { useState } from 'react'
 import Header from '@/Components/Header';
 
 const page = () => {
-    const [a, setA] = useState(10);
+    const [user, setUser] = useState("Prathamesh")
     return (
         <>
             <Header/>
+
         </>
     )
 }
