@@ -12,3 +12,32 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+#logo{
+    color: white;
+}
+
+.navv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    color: white;
+}
+
+.navv li{
+    display: flex;
+    direction: none;
+}
+
+.navv a{
+    text-decoration: none;
+}
