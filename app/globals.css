@@ -47,3 +47,13 @@ body {
     color: white;
     text-decoration: none;
 }
+
+.btn{
+    background-color: gray;
+    margin: 5px;
+    padding: 5px 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
