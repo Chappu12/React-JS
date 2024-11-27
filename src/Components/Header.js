@@ -3,12 +3,12 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-        <nav>
+        <div className='nav-bar'>
             <div>
-                LOGO
+                <span>LOGO</span>
             </div>
             <div>
-                <ul>
+                <ul className='nav-menu'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Product</li>
@@ -16,7 +16,7 @@ const Header = () => {
                 </ul>
             </div>
             
-        </nav>
+        </div>
     </>
   )
 }

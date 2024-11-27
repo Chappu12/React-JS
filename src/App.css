@@ -10,6 +10,31 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+.nav-bar {
+    height: 10%; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style: none; 
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav-menu li:hover {
+    color: lightgray; 
+  }
+  

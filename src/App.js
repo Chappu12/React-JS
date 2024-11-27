@@ -1,10 +1,15 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import './App.css'
 
 const App = () => {
+    const [name, setName] = useState("Prathamesh")
     return (
         <>
-            <div>Hi my name is Prathamesh</div>
+            <div>Hi my name is {name}</div>
+            <button onClick={() => {
+              setName("Developer")
+            }}>Click me</button>
         </>
     )
 }
