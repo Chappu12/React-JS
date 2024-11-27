@@ -8,7 +8,7 @@ const App = () => {
         <>
             <div>Hi my name is {name}</div>
             <button onClick={() => {
-              setName("Developer")
+                setName("Developer")
             }}>Click me</button>
         </>
     )

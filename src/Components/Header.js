@@ -5,7 +5,7 @@ const Header = () => {
     <>
         <div className='nav-bar'>
             <div>
-                <span>LOGO</span>
+                LOGO
             </div>
             <div>
                 <ul className='nav-menu'>
