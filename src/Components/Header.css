@@ -1,0 +1,25 @@
+.nav-bar {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    list-style: none; 
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .nav-menu li:hover {
+    color: lightgray; 
+  }
+  

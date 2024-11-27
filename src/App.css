@@ -12,29 +12,24 @@ body {
     padding: 0;
 }
 
-.nav-bar {
-    height: 10%; 
-    padding: 10px;
+.main{
+    height: 45rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: gray;
     color: white;
+    font-size: larger;
+}
+
+.btn{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: medium;
     font-weight: bold;
-  }
-  
-  .nav-menu {
-    list-style: none; 
-    display: flex;
-    gap: 20px; 
-  }
-  
-  .nav-menu li {
-    cursor: pointer;
-    color: white;
-  }
-  
-  .nav-menu li:hover {
-    color: lightgray; 
-  }
-  
+}
