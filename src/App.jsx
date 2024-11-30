@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
     const [name, setName] = useState("Prathamesh")
