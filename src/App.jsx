@@ -5,14 +5,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
     const [name, setName] = useState("Prathamesh")
-    const [flag, setflag] = useState(0)
+    const [counter, setCounter] = useState(0)
+    // const [flag, setflag] = useState(0)
     return (
         <>
             <div className='main'>
                 <div>Hi my name is {name}</div>
                 <button className='btn' onClick={() => {
                     setName((name) => name === "Prathamesh" ? "Developer" : "Prathamesh")
-
                     // if(flag == 0){
                     //     setName("Developer")
                     //     setflag(1)
@@ -22,6 +22,22 @@ const App = () => {
                     //     setflag(0)
                     // }
                 }}>Click me</button>
+                <div>
+                    <p>Counter : {counter}</p>
+                    <button className="btn" onClick={() => {
+                        setCounter(counter + 1)
+                    }}>
+                        Increment
+                    </button>
+                    <button className="btn" onClick={() => {
+                        if(counter <= 0){
+                            alert("Less than 0 not allowed")
+                        }
+                        else{
+                            setCounter(counter - 1)
+                        }
+                    }}>Decrement</button>
+                </div>
             </div>
         </>
     )
