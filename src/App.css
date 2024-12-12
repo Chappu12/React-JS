@@ -33,3 +33,7 @@ body {
     font-size: medium;
     font-weight: bold;
 }
+
+.count{
+    text-align: center;
+}
