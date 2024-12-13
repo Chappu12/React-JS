@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
-
 const App = () => {
     // const Home = () => <h1>Home Page</h1>;
     // const Product = () => <h1>Product Page</h1>;
