@@ -10,6 +10,9 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: gray;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .main{
@@ -19,7 +22,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gray;
     color: white;
     font-size: larger;
 }
@@ -32,6 +34,7 @@ body {
     color: white;
     font-size: medium;
     font-weight: bold;
+    box-shadow: none;
 }
 
 .count{

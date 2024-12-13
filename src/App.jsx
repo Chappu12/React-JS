@@ -1,15 +1,30 @@
-'use client'
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
-import { Link } from "react-router-dom";
+import Header from './Components/Header/Header'
+
 
 const App = () => {
+    // const Home = () => <h1>Home Page</h1>;
+    // const Product = () => <h1>Product Page</h1>;
+    // const About = () => <h1>About Page</h1>;
+    // const SignUp = () => <h1>Sign Up Page</h1>;
     const [name, setName] = useState("Prathamesh")
     const [counter, setCounter] = useState(0)
     const ele = <h1>MAD MAX</h1>
+    const [first, setfirst] = useState("PPB")
     // const [flag, setflag] = useState(0)
     return (
         <>
+            {/* <Router>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/product" element={<Product />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/signup" element={<SignUp />} />
+                </Routes>
+            </Router> */}
             <div className='main'>
                 {ele}
                 <div>Hi my name is {name}</div>
@@ -27,7 +42,12 @@ const App = () => {
                 <div className='count'>
                     <p>Counter : {counter}</p>
                     <button className="btn" onClick={() => {
-                        setCounter(counter + 1)
+                        if (counter >= 20) {
+                            alert("not allowed")
+                        }
+                        else {
+                            setCounter(counter + 1)
+                        }
                     }}>
                         Increment
                     </button>
@@ -39,6 +59,12 @@ const App = () => {
                             setCounter(counter - 1)
                         }
                     }}>Decrement</button>
+                </div>
+                <div>
+                    <p>My name is {first}</p>
+                    <button className="btn" onClick={() => {
+                        setfirst("Prathamesh Pramod Bhavsar")
+                    }}>Change</button>
                 </div>
             </div>
         </>
