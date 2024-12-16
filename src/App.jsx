@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
@@ -11,6 +11,10 @@ const App = () => {
     const [counter, setCounter] = useState(0)
     const ele = <h1>MAD MAX</h1>
     const [first, setfirst] = useState("PPB")
+    const [stock, setStock] = useState("not updated")
+    // useEffect(() => {
+    //     setStock("updated"); // we must use useEffect outside the return jsx
+    // })
     // const [flag, setflag] = useState(0)
     return (
         <>
@@ -63,6 +67,14 @@ const App = () => {
                     <button className="btn" onClick={() => {
                         setfirst("Prathamesh Pramod Bhavsar")
                     }}>Change</button>
+                </div>
+                <div>
+                    {
+                        stock
+                    }
+                    <button onClick={() => {
+                        setStock('updated')
+                    }}>Update</button>
                 </div>
             </div>
         </>
