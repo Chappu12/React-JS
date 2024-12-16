@@ -74,7 +74,7 @@ const App = () => {
                     }
                     <button onClick={() => {
                         setStock('updated')
-                    }}>Update</button>
+                    }}>Update the stock</button>
                 </div>
             </div>
         </>
