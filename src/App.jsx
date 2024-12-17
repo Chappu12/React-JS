@@ -3,10 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
 const App = () => {
-    // const Home = () => <h1>Home Page</h1>;
-    // const Product = () => <h1>Product Page</h1>;
-    // const About = () => <h1>About Page</h1>;
-    // const SignUp = () => <h1>Sign Up Page</h1>;
+
     const [name, setName] = useState("Prathamesh")
     const [counter, setCounter] = useState(0)
     const ele = <h1>MAD MAX</h1>
@@ -20,20 +17,10 @@ const App = () => {
 
     function handleNameChange(event){
         setUserName(event.target.value)
-
     }
 
     return (
         <>
-            {/* <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/product" element={<Product />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/signup" element={<SignUp />} />
-                </Routes>
-            </Router> */}
             <div className='main'>
                 {ele}
                 <div>Hi my name is {name}</div>
