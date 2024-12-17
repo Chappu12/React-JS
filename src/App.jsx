@@ -12,14 +12,15 @@ const App = () => {
     const ele = <h1>MAD MAX</h1>
     const [first, setfirst] = useState("PPB")
     const [stock, setStock] = useState("not updated")
-    const [username, setUserName] = useState('MAd MAsx')
+    const [username, setUserName] = useState()
     // useEffect(() => {
     //     setStock("updated"); // we must use useEffect outside the return jsx
     // })
     // const [flag, setflag] = useState(0)
 
-    const handleNameChange = () => {
-        
+    function handleNameChange(event){
+        setUserName(event.target.value)
+
     }
 
     return (
@@ -86,7 +87,7 @@ const App = () => {
                     <dl>
                         <dt>User Name</dt>
                             <dd>
-                                <input type="text" />
+                                <input type="text" onChange={handleNameChange}/>
                             </dd>
                     </dl>
                     <p>Hello ! {username}</p>
