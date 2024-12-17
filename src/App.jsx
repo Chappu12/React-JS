@@ -12,10 +12,16 @@ const App = () => {
     const ele = <h1>MAD MAX</h1>
     const [first, setfirst] = useState("PPB")
     const [stock, setStock] = useState("not updated")
+    const [username, setUserName] = useState('MAd MAsx')
     // useEffect(() => {
     //     setStock("updated"); // we must use useEffect outside the return jsx
     // })
     // const [flag, setflag] = useState(0)
+
+    const handleNameChange = () => {
+        
+    }
+
     return (
         <>
             {/* <Router>
@@ -75,6 +81,15 @@ const App = () => {
                     <button onClick={() => {
                         setStock('updated')
                     }}>Update the stock</button>
+                </div>
+                <div>
+                    <dl>
+                        <dt>User Name</dt>
+                            <dd>
+                                <input type="text" />
+                            </dd>
+                    </dl>
+                    <p>Hello ! {username}</p>
                 </div>
             </div>
         </>
