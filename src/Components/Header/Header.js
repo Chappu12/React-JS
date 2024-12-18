@@ -5,30 +5,28 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-            <nav className='nav-bar'>
-                <div>
+            <nav className='bg-purple-600 text-white'>
+                {/* <span className=''>
                     LOGO
-                </div>
-                <div>
-                <ul className='nav-menu'>
-                        <li>
-                            Home
-                            {/* <Link to="/">Home</Link> */}
-                        </li>
-                        <li>
-                            Product
-                            {/* <Link to="/product">Product</Link> */}
-                        </li>
-                        <li>
-                            About
-                            {/* <Link to="/about">About</Link> */}
-                        </li>
-                        <li>
-                            Sign Up
-                            {/* <Link to="/signup">Sign Up</Link> */}
-                        </li>
-                    </ul> 
-                </div>
+                </span> */}
+                <ul className='p-2 flex justify-end text-base font-medium'>
+                    <li className='nav-list'>
+                        Home
+                        {/* <Link to="/">Home</Link> */}
+                    </li>
+                    <li className='nav-list'>
+                        Product
+                        {/* <Link to="/product">Product</Link> */}
+                    </li>
+                    <li className='nav-list'>
+                        About
+                        {/* <Link to="/about">About</Link> */}
+                    </li>
+                    <li className='nav-list'>
+                        Sign Up
+                        {/* <Link to="/signup">Sign Up</Link> */}
+                    </li>
+                </ul>
             </nav>
         </>
     )
