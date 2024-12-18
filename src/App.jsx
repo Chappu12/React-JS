@@ -21,8 +21,8 @@ const App = () => {
 
     return (
         <>
-            <div className='h-screen'>
-                
+            <div className='h-screen flex align-middle justify-center font-medium text-lg'>
+                Hi may I help you!
             </div>
         </>
     )
