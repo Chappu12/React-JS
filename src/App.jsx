@@ -21,8 +21,11 @@ const App = () => {
 
     return (
         <>
-            <div className='h-screen flex align-middle justify-center font-medium text-lg'>
-                Hi may I help you!
+            <div className='h-screen flex font-medium text-lg place-content-center'>
+                Hi may I help you {name}!
+                <button onClick={() => {
+                    setName("MAd")
+                }}>Click me</button>
             </div>
         </>
     )
