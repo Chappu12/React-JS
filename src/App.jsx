@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css'
+// import './App.css'
 
 const App = () => {
 
@@ -21,8 +21,8 @@ const App = () => {
 
     return (
         <>
-            <div className='h-screen flex font-medium text-lg place-content-center'>
-                Hi may I help you {name}!
+            <div className='h-screen flex font-medium text-lg'>
+                <p>Hi may I help you {name}!</p>
                 <button onClick={() => {
                     setName("MAd")
                 }}>Click me</button>
